@@ -1,0 +1,36 @@
+// This is a server-side code in Node.js
+const express = require('express');
+const app = express();
+const multer = require('multer');
+const path = require('path');
+
+// Set up Multer storage configuration
+const storage = multer.diskStorage({
+  destination: (req, file, cb) => {
+    cb(null, 'uploads/');
+  },
+  filename: (req, file, cb) => {
+    cb(null, `${Date.now()}-${file.originalname}`);
+  }
+});
+
+// Initialize Multer with the storage configuration
+const upload = multer({ storage });
+
+// Serve the HTML, CSS, and JavaScript files
+app.use(express.static('public'));
+
+// Handle the job application form submission
+app.post('/apply', upload.single('resume'), (req, res) => {
+  // Process the form data and save the resume file
+  console.log('Form data:', req.body);
+  console.log('Resume file:', req.file);
+
+  // Redirect the user to a success page or return a response
+  res.redirect('/success');
+});
+
+// Start the server
+app.listen(3000, () => {
+  console.log('Server is running on port 3000');
+});

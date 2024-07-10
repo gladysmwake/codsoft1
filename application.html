@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="application.css">
+  <link rel="icon" type="image/x-icon" href="images/bee.ico">
+	<title>JobHive</title>
+</head>
+<body>
+	<main>
+    <div class="form-container">
+      <button class="button" onclick="window.location.href='joblisting.html';">
+  <span class="X"></span>
+  <span class="Y"></span>
+  <div class="close">Close</div>
+</button>
+  <section class="job-application">
+    <h2  style="text-align: center;" >Application Form</h2>
+    
+    <form id="job-application-form">
+
+      
+      <div class="form-group">
+        
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="phone">Phone</label>
+        <input type="tel" id="phone" name="phone" required>
+      </div>
+      <div class="form-group">
+        <label for="resume">Resume</label>
+        <input type="file" id="resume" name="resume" required>
+      </div>
+      <div class="form-group">
+        <label for="cover-letter">Cover Letter</label>
+        <textarea id="cover-letter" name="cover-letter" required></textarea>
+      </div>
+      <button type="submit">Submit Application</button>
+    </form>
+  </section>
+</div>
+</main>
+<script src="application.js"></script>
+<script src="application.jsx"></script>
+</body>
+</html>
+
+
+

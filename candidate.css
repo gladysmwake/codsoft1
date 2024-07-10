@@ -1,0 +1,361 @@
+/* Navigation Bar CSS */
+header {
+  background-color: #0077b6;
+  color: #fff;
+  padding: 1rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo a {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin-right: 1.5rem;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+header {
+  background-color: #0077b6;
+  color: #fff;
+  padding: 2rem;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+header p {
+  font-size: 1.5rem;
+}
+.auth-links a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 1rem;
+}
+
+.auth-links .btn {
+  background-color: #fff;
+  color: #0077b6;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+}
+
+.auth-links .btn:hover {
+  background-color: #f4f4f4;
+}
+
+
+
+
+
+
+
+
+.candidate-dashboard {
+    margin: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+}
+
+.candidate-dashboard h2 {
+    color: #333;
+}
+
+.profile-management {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+.profile-management form {
+    margin-top: 10px;
+    width: 75%; /* Set form width to 75% of the screen */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.profile-management label {
+    font-weight: bold;
+}
+
+.profile-management input[type="text"],
+.profile-management input[type="email"],
+.profile-management input[type="file"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.profile-management button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+.profile-management button:hover {
+    background-color: #0056b3;
+}
+
+
+.profile-management h3 {
+    color: #333;
+}
+
+.profile-management form {
+    margin-top: 10px;
+}
+
+.profile-management label {
+    font-weight: bold;
+}
+
+
+
+
+.job-applications {
+    margin-top: 20px;
+}
+
+.job-applications h3 {
+    color: #333;
+}
+
+.job-applications ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.job-applications li {
+    margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-section {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.social-icon {
+    margin-right: 10px;
+}
+
+
+
+
+
+
+
+/* Style for the footer */
+footer {
+    background-color:  #0077b6; /* Blue color */
+    color: #fff;
+    padding: 20px 0;
+}
+
+/* Remaining CSS styles for the footer content */
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    margin-bottom: 20px;
+}
+
+h4 {
+    color: #fff;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.social-icons {
+    display: flex;
+}
+
+.social-icon {
+    margin-right: 10px;
+}
+
+/* Style for the form */
+input[type="email"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Style for app store icons */
+.app-store,
+.play-store {
+    margin-top: 10px;
+}
+
+.app-store img,
+.play-store img {
+    width: 120px;
+    margin-right: 10px;
+}
+
+
+
+
+.wrapper {
+  display: inline-flex;
+  list-style: none;
+  height: 120px;
+  width: 100%;
+  padding-top: 40px;
+  font-family: "Poppins", sans-serif;
+  justify-content: center;
+}
+
+.wrapper .icon {
+  position: relative;
+  background: black;
+  border-radius: 50%;
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip {
+  position: absolute;
+  top: 0;
+  font-size: 14px;
+  background: #fff;
+  color: #fff;
+  padding: 5px 8px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip::before {
+  position: absolute;
+  content: "";
+  height: 8px;
+  width: 8px;
+  background: #fff;
+  bottom: -3px;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .icon:hover .tooltip {
+  top: -45px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper .facebook:hover,
+.wrapper .facebook:hover .tooltip,
+.wrapper .facebook:hover .tooltip::before {
+  background: #1877f2;
+  color: #fff;
+}
+
+.wrapper .twitter:hover,
+.wrapper .twitter:hover .tooltip,
+.wrapper .twitter:hover .tooltip::before {
+  background: #1da1f2;
+  color: #fff;
+}
+
+.wrapper .instagram:hover,
+.wrapper .instagram:hover .tooltip,
+.wrapper .instagram:hover .tooltip::before {
+  background: #e4405f;
+  color: #fff;
+}
+
+
+
